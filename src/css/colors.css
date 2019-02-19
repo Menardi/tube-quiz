@@ -1,0 +1,32 @@
+:root {
+  --color-body-background: #F5F8FF;
+  --color-content-background: #FFF;
+  --color-blue: #1C3F94;
+  --color-text: #222;
+
+  --color-line-bakerloo: #AB4800;
+  --color-line-central: #F10;
+  --color-line-circle: #FFD600;
+  --color-line-district: #0C6826;
+  --color-line-hammersmith: #F76897;
+  --color-line-jubilee: #85898A;
+  --color-line-metropolitan: #89014C;
+  --color-line-northern: #000;
+  --color-line-piccadilly: #10137E;
+  --color-line-victoria: #2B8DBF;
+  --color-line-waterloo: #76D0BD;
+  --color-line-dlr: #00AFAD;
+}
+
+.line-bakerloo { background-color: var(--color-line-bakerloo); }
+.line-central { background-color: var(--color-line-central); }
+.line-circle { background-color: var(--color-line-circle); }
+.line-district { background-color: var(--color-line-district); }
+.line-hammersmith { background-color: var(--color-line-hammersmith); }
+.line-jubilee { background-color: var(--color-line-jubilee); }
+.line-metropolitan { background-color: var(--color-line-metropolitan); }
+.line-northern { background-color: var(--color-line-northern); }
+.line-piccadilly { background-color: var(--color-line-piccadilly); }
+.line-victoria { background-color: var(--color-line-victoria); }
+.line-waterloo { background-color: var(--color-line-waterloo); }
+.line-dlr { background-color: var(--color-line-dlr); }

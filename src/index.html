@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="css/app.css" />
+	<link href="https://fonts.googleapis.com/css?family=Hammersmith+One" rel="stylesheet">
+	<link rel="icon" href="img/favicon.png" />
+	<title>Tube Quiz - Name the Tube station</title>
+	<script src="js/app.js"></script>
+	<script type='text/javascript'>
+		var CountlyInitOpts = { force_post: true };
+		var Countly = Countly || {};
+		Countly.q = Countly.q || [];
+
+		Countly.app_key = "4037ab6e4e4025619ed48ebdaf9c268c1d2ee38b";
+		Countly.url = "https://stats.gearoid.me";
+
+		Countly.q.push(['track_sessions']);
+		Countly.q.push(['track_pageview']);
+		Countly.q.push(['track_errors']);
+
+		(function() {
+			var cly = document.createElement('script'); cly.type = 'text/javascript';
+			cly.async = true;
+			cly.src = 'https://stats.gearoid.me/sdk/web/countly.min.js';
+			cly.onload = function(){Countly.init(CountlyInitOpts)};
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(cly, s);
+		})();
+	</script>
+</head>
+<body>
+	<div class="container">
+		<div class="menu-close menu-close-overlay" style="display: none"></div>
+
+		<nav class="menu">
+			<h2>Level Selection</h2>
+			<ul class="level-selection"></ul>
+			<p class="footer">
+				This has absolutely nothing to do with TfL or London Underground. Just a bit of fun!<br>
+				Source code on <a href="https://github.com/Menardi/tube-quiz" title="Tube Quiz GitHub Repository">GitHub</a>
+			</p>
+		</nav>
+
+		<main>
+			<div class="tube-map-container">
+				<p class="loading-message">Loading Tube map ... just a sec!</p>
+			</div>
+			<div class="answer-area">
+				<input class="answer-input" type="text" placeholder="Name the station">
+				<button class="skip-button">SKIP</button>
+				<span class="next-station-countdown" style="display: none"></span>
+				<span class="station-fact" style="display: none"></span>
+			</div>
+			<div class="header">
+				<a class="menu-open" href="javascript:void(0)">
+					<img src="img/menu.svg">
+				</a>
+				<h2 class="current-level-name"></h2>
+				<span class="current-level-progress"></span>
+			</div>
+			<div class="level-complete-message" style="display: none">
+				<p>Nice one, you've completed all the stations in this level! You can replay this level, or choose another from the menu.</p>
+
+				<div class="level-complete-table-container"></div>
+
+				<button class="level-replay-button">
+					Replay Level
+				</button>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

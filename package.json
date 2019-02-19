@@ -1,0 +1,29 @@
+{
+  "name": "tube",
+  "version": "1.0.0",
+  "main": "src/js/app.js",
+  "devDependencies": {
+    "babel-preset-env": "^1.5.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-better-rollup": "^1.1.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-clean-css": "^3.4.1",
+    "gulp-live-server": "^0.0.30",
+    "gulp-postcss": "^8.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-uglify": "^3.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-preset-env": "^6.5.0",
+    "rollup-stream": "^1.19.0",
+    "run-sequence": "^1.2.2",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "scripts": {
+    "build": "gulp",
+    "minify": "gulp minify",
+    "release": "gulp release && gulp minify",
+    "serve": "gulp serve"
+  }
+}
