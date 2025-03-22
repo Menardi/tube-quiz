@@ -10,7 +10,7 @@ https://gearoid.me/tubequiz
 
 First install the dependencies with `yarn install` or `npm install`.
 
-To build the files and test in browser, run 
+To build the files and test in browser, run
 
 ```
 npm run serve
@@ -21,10 +21,10 @@ npm run serve
 To build for release, run
 
 ```
-npm run release
+npm run build
 ```
 
-This will output everything into the `www` folder.
+This will output everything into the `dist` folder.
 
 ## Licence
 
